@@ -140,10 +140,10 @@ print_number(12);
 
 class MyClass {
     // Properties
-    public $my_string;
-    public $my_int;
-    public $my_double;
-    public $my_bool;
+    private $my_string;
+    private $my_int;
+    private $my_double;
+    private $my_bool;
 
     // Constructor
     public function __construct($my_string, $my_int, $my_double, $my_bool) {
@@ -154,46 +154,46 @@ class MyClass {
     }
 
     // Methods
-    public function print_my_string() {
+    public function printMyString() {
         echo $this->my_string . "\n";
     }
 
-    public function print_my_int() {
+    public function printMyInt() {
         echo $this->my_int . "\n";
     }
 
-    public function print_my_double() {
+    public function printMyDouble() {
         echo $this->my_double . "\n";
     }
 
-    public function print_my_bool() {
+    public function printMyBool() {
         echo $this->my_bool . "\n";
     }
 }
 
 $my_class = new MyClass($my_string, $my_int, $my_double, $my_bool);
-$my_class->print_my_string();
-$my_class->print_my_int();
-$my_class->print_my_double();
-$my_class->print_my_bool();
+$my_class->printMyString();
+$my_class->printMyInt();
+$my_class->printMyDouble();
+$my_class->printMyBool();
 
 // Inheritance
 
 // Interfaces
 
 interface MyInterface {
-    public function print_my_string();
-    public function print_my_int();
-    public function print_my_double();
-    public function print_my_bool();
+    public function printMyString();
+    public function printMyInt();
+    public function printMyDouble();
+    public function printMyBool();
 }
 
 class MyOtherClass implements MyInterface {
     // Properties
-    public $my_string;
-    public $my_int;
-    public $my_double;
-    public $my_bool;
+    private $my_string;
+    private $my_int;
+    private $my_double;
+    private $my_bool;
 
     // Constructor
     public function __construct($my_string, $my_int, $my_double, $my_bool) {
@@ -204,21 +204,20 @@ class MyOtherClass implements MyInterface {
     }
 
     // Methods
-    public function print_my_string() {
+    public function printMyString() {
         echo $this->my_string . "\n";
     }
 
-    public function print_my_int() {
+    public function printMyInt() {
         echo $this->my_int . "\n";
     }
 
-    public function print_my_double() {
+    public function printMyDouble() {
         echo $this->my_double . "\n";
     }
 
-    public function print_my_bool() {
+    public function printMyBool() {
         echo $this->my_bool . "\n";
     }
 }
-
 ?>
